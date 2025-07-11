@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./Styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yared's Portofolio</title>
+  </head>
+  <body>
+    <div class="loader-wrapper" id="loader-2">
+      <div id="loader"></div>
+    </div>
+
+    <div class="cursor"></div>
+    <!-- for custom cursor -->
+    <div class="container">
+      <header class="header">
+        <a href="#hero" class="logo">Yared <span>Abera</span></a>
+        <div class="eyes-container">
+          <div class="eye" id="eye-left">
+            <div class="pupil" id="pupil-left">
+              <div class="inner"></div>
+            </div>
+          </div>
+          <div class="eye" id="eye-right">
+            <div class="pupil" id="pupil-right"><div class="inner"></div></div>
+          </div>
+        </div>
+        <nav class="nav">
+          <img
+            src="./icons/menu.png"
+            loading="lazy"
+            alt="menu icon"
+            class="menu-icon"
+            id="menu-icon"
+            onclick="togglemenu()"
+          />
+          <ul class="nav__list" id="menu-lis">
+            <a href="#home" class="nav__link">Home</a>
+            <a href="#about" class="nav__link">About</a>
+            <a href="#project" class="nav__link">Projects</a>
+            <a href="#contact" class="nav__link">Contact</a>
+          </ul>
+        </nav>
+      </header>
+      <section class="home hidden" id="home">
+        <div class="home_container">
+          <h1 class="home_title">Hi, I am <span>Yared</span></h1>
+          <h3 class="animated-text">I'm a: <span></span></h3>
+          <p class="home_description">
+            I'm a Full Stack Web developer and a Computer Science Graduate. I'm
+            passionate about creating web applications and software that can
+            help people in their daily life.
+          </p>
+          <div class="social-icons">
+            <div class="icons">
+              <a href="https://github.com/yared-abera" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <div class="icons">
+              <a href="https://t.me/@yaredo_webdev" target="_blank"
+                ><i class="fa-brands fa-telegram"></i
+              ></a>
+            </div>
+            <div class="icons">
+              <a href="mailto:yaredoabera7@gmail.com" target="_blank"
+                ><i class="fa-regular fa-envelope"></i
+              ></a>
+            </div>
+          </div>
+          <div class="btn-group">
+            <a href="mailto:yaredoabera7@gmail.com" class="btn">Hire</a>
+            <button class="btn" onclick="changeColor()" id="color">
+              Theme
+            </button>
+          </div>
+        </div>
+        <div class="border">
+          <div class="home-img">
+            <img src="./img/y.png" alt="yada's img" loading="lazy" />
+          </div>
+        </div>
+      </section>
+      <section id="about" class="hidden">
+        <div class="about-container">
+          <h2 class="section-title">About Me</h2>
+          <div class="about-content">
+            <img
+              src="./img/project/yada.jpg"
+              alt="yaredo"
+              class="about-photo"
+              loading="lazy"
+            />
+            <div class="about-text">
+              <p>
+                Hi, I'm Yared Abera — a passionate Computer Science graduate
+                from Wolkite University, currently focused on becoming a
+                proficient full-stack software developer. My journey in
+                technology started with a natural curiosity about how things
+                work, which soon grew into a strong enthusiasm for coding and
+                solving real-world problems.
+              </p>
+
+              <p>
+                I gained hands-on experience in building accessible,
+                user-friendly interfaces. I've also solidified my programming
+                foundation through multiple courses, allowing me to build
+                scalable and maintainable software solutions.
+              </p>
+
+              <p>
+                Throughout my academic and self-taught learning journey, I've
+                worked on various projects that demonstrate my ability to apply
+                theoretical knowledge in practical ways — from developing
+                interactive web applications to writing clean, efficient code.
+                I'm always eager to learn and push the boundaries of what I can
+                do.
+              </p>
+
+              <p>
+                Beyond coding, I enjoy exploring emerging technologies,
+                contributing to open-source initiatives, and keeping up with the
+                latest trends in the software industry. I aim to grow
+                continuously as a full-stack developer and contribute
+                meaningfully to innovative and impactful projects.
+              </p>
+
+              <p>
+                Feel free to explore my portfolio to see what I've been working
+                on. I'm always open to connecting with fellow tech enthusiasts
+                and collaborating on exciting new opportunities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="project hidden" id="project">
+        <div class="about-container">
+          <h2 class="section-title">Projects</h2>
+          <div class="project-container">
+            <div class="project-item">
+              <div class="card">
+                <img
+                  src="./img/project/Mern-dms.png"
+                  alt="Project Image"
+                  loading="lazy"
+                />
+                <div class="card-content">
+                  <h2 class="card-title">
+                    Mern Stack Dormitory Management System
+                  </h2>
+                  <p class="card-description">
+                    This project is a full-stack Dormitory Management System
+                    developed as a final year project for Wolkite University.
+                    The goal of the system is to digitize and streamline
+                    dormitory operations for university staff and students,
+                    replacing traditional paper-based processes. Built using the
+                    MERN (MongoDB, Express.js, React.js, Node.js) stack
+                  </p>
+                  <div class="card-links">
+                    <a href="https://github.com/yared-abera/MERN-Stack-DMS"
+                      >View Project</a
+                    >
+                    <a href="https://github.com/yared-abera/MERN-Stack-DMS"
+                      >Source Code</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-item">
+              <div class="card">
+                <img
+                  src="./img/project/binary.png"
+                  alt="Project Image"
+                  loading="lazy"
+                />
+                <div class="card-content">
+                  <h2 class="card-title">Travel and Tour Guidance Web</h2>
+                  <p class="card-description">
+                    The Tour and Travel Guidance System is a web and/or mobile-based application designed to assist users in planning, organizing,
+                     and managing their travel experiences more efficiently. <br /><br /><br />
+                  </p>
+                  <div class="card-links">
+                    <a href="https://github.com/yared-abera/travel-and-tour-Guidance-project">View Project</a>
+                    <a href="https://github.com/yared-abera/travel-and-tour-Guidance-project">Source Code</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-item">
+              <div class="card">
+                <img
+                  src="./img/project/netflix-clone.png"
+                  alt="Project Image"
+                  loading="lazy"
+                />
+                <div class="card-content">
+                  <h2 class="card-title">The nexflix-clone</h2>
+                  <p class="card-description">
+                    The netflix website clone is is a clone of the popular
+                    Netflix web app it is made by combining React javascript
+                    html and css.<br /><br />
+                  </p>
+                  <div class="card-links">
+                    <a href="https://github.com/yared-abera/netflix-react-clone" target="_blank">View Project</a>
+                    <a href="https://github.com/yared-abera/netflix-react-clone" target="_blank">Source Code</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact hidden" id="contact">
+        <div class="contact-container">
+          <div class="section-header">
+            <h2>Contact Me</h2>
+          </div>
+          <div class="row">
+            <div class="contact-info">
+              <div class="contact-info-item">
+                <img src="./img/project/addres.svg" loading="lazy" />
+                <div class="contact-info-content">
+                  <h4>Address</h4>
+                  <p>Ethiopia<br />Addis Ababa, Bole sub city <br />1000</p>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <img src="./img/project/call.png" loading="lazy" alt="" />
+                <div class="contact-info-content">
+                  <h4>Phone</h4>
+                  <p>+251-968188616</p>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <img src="./img/project/email.svg" loading="lazy" />
+                <div class="contact-info-content">
+                  <h4>Email</h4>
+                  <p>yaredoabera7@gmail.com</p>
+                </div>
+              </div>
+            </div>
+            <div class="contact-form">
+              <form action="" id="contact-form">
+                <h2>Send Message</h2>
+                <div class="input-box">
+                  <input
+                    type="text"
+                    required="true"
+                    name=""
+                    placeholder="Full Name"
+                  />
+                </div>
+                <div class="input-box">
+                  <input
+                    type="email"
+                    required="true"
+                    name=""
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="input-box">
+                  <textarea
+                    required="true"
+                    name=""
+                    placeholder="Type your Message..."
+                    class="textarea"
+                  ></textarea>
+                </div>
+                <div class="input-box">
+                  <input type="submit" value="Send" name="" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="./javascript.js"></script>
+  </body>
+</html>
