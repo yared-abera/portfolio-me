@@ -18,8 +18,7 @@ Responsive Design: The website is fully responsive, ensuring a seamless experien
 Projects Section: Highlights key projects with descriptions, technologies used, and links to the source code or live demos.
 Skills Section: Displays a list of technical skills and proficiencies.
 Experience Section: Showcases my work experience, internships, and relevant roles.
-Contact Form: Allows visitors to get in touch with me directly through the website.
-Social Links: Provides links to my professional profiles on platforms like LinkedIn and GitHub.
+Contact Form: Allows visitors to get in touch with me directly through the website
 ## Technologies Used
 HTML5: For the structure and content of the website.
 CSS3: For styling and layout.
@@ -31,7 +30,7 @@ To run this project locally, follow these steps:
 Clone the repository:
 
 ```bash
-git clone https://github.com/efa07/portofolio.git
+git clone https://github.com/yared-abera/portfolio-me.git
 ```
 Navigate to the project directory:
 
@@ -55,7 +54,7 @@ This project is licensed under the MIT License. See the LICENSE file for details
 ## Contact
 If you have any questions, suggestions, or would like to connect, please reach out to me:
 
-* Email: efatariku07@gmail.com
+* Email: yaredoabera7@gmail.com
 Thank you for visiting my portfolio!
 
 
